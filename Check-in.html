@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Check-in.css">
+    <title>Trang Check-in Lễ Tân</title>
+</head>
+<body>
+
+    <h1>Trang Check-in Lễ Tân</h1>
+
+    <!-- Tìm kiếm -->
+    <div class="search-container">
+        <label for="search">Tìm kiếm lịch đăng ký:</label>
+        <input type="text" id="search" placeholder="..." onkeyup="filterTable()">
+    </div>
+
+    <!-- Bảng danh sách lịch -->
+    <div class="table-container">
+        <table id="bookingTable">
+            <thead>
+                <tr>
+                    <th>Tên Pet</th>
+                    <th>Tên User</th>
+                    <th>Thời gian Đặt Lịch</th>
+                    <th>Status</th>
+                    <th>Check-in</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td>Bún</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>9:00 12-11-2024</td>
+                    <td>Cắt Tỉa Lông</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Bông</td>
+                    <td>Trịnh Lê Xuân B</td>
+                    <td>13:00 12-11-2024</td>
+                    <td>Tắm</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Gạo</td>
+                    <td>Trần Văn D</td>
+                    <td>8:00 14-11-2024</td>
+                    <td>Vaccine</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Thóc</td>
+                    <td>Ngô Thanh V</td>
+                    <td>17:00 13-11-2024</td>
+                    <td>Cắt móng</td>
+                    <td><input type="checkbox"></td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="Check-in.js"></script>
+</body>
+</html>

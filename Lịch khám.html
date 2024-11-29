@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lịch Khám</title>
+        <link rel="stylesheet" type="text/css" href="Lịch khám.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    </head>
+    <body>
+        <div class="login">
+            <h2>Đăng ký lịch</h2>
+            <br>
+            <p>Tên đăng nhập</p>
+            <br>
+            <input type="text" id="username" placeholder="Username/Email">
+            <br>
+            <p>Tên Pet</p>
+            <br>
+            <input type="text" id="petName" placeholder="Pet's name">
+            <br>
+            <p>Tuổi của Pet</p>
+            <br>
+            <input type="number" id="petAge" placeholder="Pet's Age">
+            <br>
+            <p>Thời gian</p>
+            <br>
+            <input type="time" id="appointmentTime" placeholder="Chọn thời gian...">
+            <br>
+            <input type="date" id="appointmentDate" placeholder="Chọn ngày...">
+            <br>
+            <p>Bác sĩ khám</p>
+            <br>
+            <select id="doctor" aria-placeholder="Chọn bác sĩ">
+                <option value="Null">Không ưu tiên</option>
+            </select>
+            <br>
+            <br>
+            <p>Lưu ý</p>
+            <br>
+            <input type="text" id="note" placeholder="Note">
+            <br>
+            <button class="login_button" id="registerButton">Đăng ký</button>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <script>
+            // Sử dụng flatpickr cho input date và time
+            flatpickr("#appointmentDate", {
+                dateFormat: "Y-m-d", // Định dạng ngày tháng
+            });
+
+            flatpickr("#appointmentTime", {
+                enableTime: true,  // Bật tính năng chọn giờ
+                noCalendar: true,  // Tắt lịch
+                dateFormat: "H:i", // Định dạng giờ
+            });
+        </script>
+
+        <script src="Lịch khám.js"></script>
+    </body>
+</html>

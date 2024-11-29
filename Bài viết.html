@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bài Viết - PETMART</title>
+    <link rel="stylesheet" href="Bài viết.css">
+</head>
+<body>
+    <div id="wrapper">
+                    <div id="header">
+                        <a href="" class="logo">
+                            <img src="Image/logo.png" alt="">
+                        </a>
+                        <div id="menu">
+                            <div class="item">
+                                <button>
+                                    <a href="Trangchu2.html">Trang chủ</a>
+                                </button>                     
+                            </div>
+                            <div class="item">
+                                <button>
+                                    <a href="Dịch vụ.html">Dịch vụ</a>
+                                </button>
+                            </div>
+                            <div class="item">
+                                <button>
+                                    <a href="Lịch khám.html">Đặt lịch</a>
+                                </button>
+                            </div>
+                            <div class="item">
+                                <button>
+                                    <a href="Bài viết.html">Bài viết</a>
+                                </button>
+                            </div>  
+                        </div>
+        
+                        <div id="actions">
+                            <img src="Image/user.png" alt="">
+                            <div id="user-menu" class="user-menu">
+                                <ul>
+                                    <li><a href="Thông tin tài khoản.html">Thông tin người dùng</a></li>
+                                    <li><a href="#">Cài đặt</a></li>
+                                    <li><a href="Trang chủ.html">Đăng xuất</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="banner">
+                        <div class="box-left">
+                            <h2>
+                                <span>DỊCH VỤ</span>
+                                <br>
+                                <span>TỐT NHẤT</span>
+                            </h2>
+                            <p>
+                                Chuyên cung cấp các dịch vụ tốt nhất cho các "bé yêu" của bạn, 
+                                đảm bảo chất lượng dịch vụ xứng đáng 5 sao
+                            </p>
+                            <button>
+                                <a href="Lịch khám.html">Đặt lịch ngay</a>
+                            </button>
+                        </div>
+                        <div class="box-right">
+                            <img src="Image/Ảnh 2.jpg" alt="">
+                            <img src="Image/Ảnh 2.jpg" alt="">
+                            <img src="Image/Ảnh 2.jpg" alt="">
+                        </div>
+                        <div class="to-bottom">
+                            <a href="">
+                                <img src="Image/to_bottom.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+        <!-- Phần Bài Viết -->
+        <section id="article-section">
+            <!-- Form Đăng Bài Viết -->
+    
+            <br>
+
+
+
+            <h1>Xem Bài Viết</h1>
+
+            <br>
+            <br>
+            <div class="article-list">
+                <!-- Bài viết 1 -->
+                <div class="article-item">
+                    <h2>Tiêu đề bài viết 1</h2>
+                    <p class="author">Tác giả: Trịnh Lê Xuân B</p>
+                    <p class="date">Ngày đăng: 01/12/2024</p>
+                    <p class="content">Đây là nội dung của bài viết 1.</p>
+                    <br>
+                    <button>
+                        <a href="Chi tiết bài viết.html">
+                            Xem chi tiết
+                        </a>
+                    </button>
+                </div>
+
+                <!-- Bài viết 2 -->
+                <div class="article-item">
+                    <h2>Tiêu đề bài viết 2</h2>
+                    <p class="author">Tác giả: Trần H</p>
+                    <p class="date">Ngày đăng: 30/11/2024</p>
+                    <p class="content">Nội dung bài viết 2. </p>
+                </div>
+
+                <!-- Bài viết 3 -->
+                <div class="article-item">
+                    <h2>Tiêu đề bài viết 3</h2>
+                    <p class="author">Tác giả: Ngô Thanh V</p>
+                    <p class="date">Ngày đăng: 25/11/2024</p>
+                    <p class="content">Bài viết về những lợi ích khi chăm sóc thú cưng tại Petmart.</p>
+                </div>
+            </div>
+
+
+            <div id="comment-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeCommentModal()">&times;</span>
+                    <h3>Bình luận</h3>
+                    <div id="comment-list"></div>
+                    <textarea id="new-comment" placeholder="Viết bình luận của bạn..."></textarea>
+                    <button onclick="submitComment()">Gửi Bình luận</button>
+                </div>
+            </div>
+            <br>
+            <h2>Đăng Bài Viết Mới</h2>
+            <br>
+            <br>
+            <form action="submit_article.php" method="POST">
+                <label for="title">Tiêu đề:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="content">Nội dung:</label>
+                <textarea id="content" name="content" rows="6" required></textarea>
+
+                <label for="author">Tên tác giả:</label>
+                <input type="text" id="author" name="author" required>
+
+                <button type="submit">Đăng Bài Viết</button>
+            </form>
+
+        </section>
+
+            <div id="footer">
+                <div class="box">
+                    <div class="logo">
+                        <img src="Image/logo.png" alt="">
+                    </div>
+                    <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+                    <p>Hotline: 0.xxxxxxxxxxx</p>
+                </div>
+                <div class="box">
+                    <h3>NỘI DUNG</h3>
+                    <ul class="quick-menu">
+                        <div class="item">
+                            <a href="">Trang chủ</a>
+                        </div>
+                        <div class="item">
+                            <a href="">Dịch vụ</a>
+                        </div>
+                        <div class="item">
+                            <a href="">Đặt lịch</a>
+                        </div>
+                        <div class="item">
+                            <a href="">Bài viết</a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>LIÊN HỆ</h3>
+                    <form action="">
+                        <input type="text" placeholder="Địa chỉ email">
+                        <button>Nhận tin</button>
+                    </form>
+                </div>
+            </div>
+        
+    </div>
+    <script src="Bài viết.js"></script>
+</body>
+</html>

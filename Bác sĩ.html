@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bác sĩ</title>
+    <link rel="stylesheet" href="Bác sĩ.css">
+    <link rel="stylesheet" href="Overlay Bác Sĩ.css">
+    <link rel="stylesheet" href="Overlay Infor.css">
+</head>
+<body>
+
+    <!-- Thanh tìm kiếm -->
+    <div class="search-container">
+        <input type="text" id="search-pet" placeholder="Tìm kiếm tên pet..." />
+        <button id="search-btn" onclick="searchPet()">Tìm kiếm</button>
+    </div>
+
+    <!-- Button phòng chờ -->
+    <div class="waiting-room-btn-container">
+        <button id="waiting-room-btn">Gọi Bệnh Nhân</button>
+        <button id="set-dotor-btn">Cài đặt</button>
+    </div>
+
+    <!-- Bảng hiển thị bác sĩ -->
+    <table id="doctor-table">
+        <thead>
+            <tr>
+                <th>Tên bác sĩ</th>
+                <th>Phòng</th>
+                <th>Chủ Pet</th>
+                <th>Tên pet</th>
+                <th>Note</th>
+                <th>Trạng thái</th>
+                <th>Chi Tiết</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Dữ liệu sẽ được hiển thị tại đây -->
+        </tbody>
+    </table>
+
+    <!-- Overlay -->
+    <div id="settings-overlay" class="overlay">
+        <div class="overlay-content">
+            <h2>Cài Đặt Bác Sĩ</h2>
+            <label for="doctor-id">ID Bác Sĩ:</label>
+            <input type="text" id="doctor-id" placeholder="Nhập ID bác sĩ">
+            <label for="doctor-status">Trạng thái:</label>
+            <input type="text" id="doctor-status" placeholder="Nhập trạng thái bác sĩ">
+            <button id="submit-btn">Hoàn Tất</button>
+        </div>
+    </div>
+
+    <!-- Overlay thông tin cuộc hẹn -->
+    <div id="info-overlay" class="overlay">
+        <div class="overlay-content">
+            <h2>Thông Tin Cuộc Hẹn</h2>
+            <p><strong>Chủ Pet:</strong> <span id="owner-name"></span></p>
+            <p><strong>Tên Pet:</strong> <span id="pet-name"></span></p>
+            <p><strong>Tuổi Pet:</strong> <span id="pet-age"></span></p>
+            <p><strong>Ngày Hẹn:</strong> <span id="appointment-date-time"></span></p>
+            <p><strong>Trạng Thái:</strong> <span id="appointment-status"></span></p>
+            <p><strong>Ghi Chú:</strong></p>
+            <textarea id="doctor-note" placeholder="Nhập ghi chú"></textarea>
+            <button id="complete-appointment-btn">Hoàn Tất Cuộc Hẹn</button>
+        </div>
+    </div>
+
+    <script src="Bác sĩ.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+/* Đảm bảo overlay ẩn mặc định */
+.overlay {
+    display: none; /* Ẩn overlay mặc định */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Đặt nền mờ */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hiển thị overlay khi có class 'show' */
+.overlay.show {
+    display: flex; /* Sử dụng flex để canh giữa */
+}
+
+/* Nội dung của overlay */
+.overlay-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.overlay-content h2 {
+    margin-bottom: 10px;
+}
+
+.overlay-content label {
+    display: block;
+    margin: 5px 0;
+}
+
+.overlay-content input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+

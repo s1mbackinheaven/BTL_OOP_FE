@@ -1,0 +1,70 @@
+body{
+    background-image: url("Image/Background5.jpg"); 
+    background-size: cover; 
+    background-position: fill; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    margin: 0;
+    opacity: 0,7;
+    font-family: Tomoto;
+}
+
+.login{
+    width: 400px;
+    height: 640px;
+    background-color: rgb(251, 230, 230);
+    border: 1px solid grey;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px auto;
+}
+.login h2{
+    display: inline-block;
+    color: rgb(248, 128, 192);
+}
+.login input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.login button{
+    width: 320px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(255, 155, 209);
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.login p{
+    display: inline-block;
+    float: left;
+    padding-left: 40px;
+    margin: 0;
+}
+
+.login_button:hover {
+    background-color: rgb(237, 26, 174);
+    color: white;
+}
+
+.login_button:active{
+    opacity: 0.7;
+}
+
+.login select {
+    width: 320px;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;  
+}
