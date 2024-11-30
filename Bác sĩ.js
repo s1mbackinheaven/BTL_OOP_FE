@@ -190,6 +190,7 @@ document.getElementById("waiting-room-btn").addEventListener("click", function (
 
 // Hàm kiểm tra và hiển thị thông tin bác sĩ khi trang được load lại
 window.onload = function() {
+    const setDoctorBtn = document.getElementById("set-dotor-btn"); // Lấy đối tượng button "Cài đặt"
     const savedRoom = localStorage.getItem('doctorRoom');
     
     if (savedRoom) {
